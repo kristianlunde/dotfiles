@@ -126,3 +126,7 @@ alias sail="[ -f sail] && bash sail || bash vendor/bin/sail"
 export FZF_DEFAULT_OPTS="--height 80% --reverse --border --preview 'bat --style=numbers --color=always {}'"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh) 
+
+tmux-git-autofetch() {(/home/kristian/.dotfiles/.tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
+add-zsh-hook chpwd tmux-git-autofetch
+    
