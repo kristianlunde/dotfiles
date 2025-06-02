@@ -43,6 +43,12 @@ return {
 			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
  			vim.keymap.set("n", "<leader>gc", ":cclose<CR>", { desc = "Close quickfix list" })
+
+      -- See diagnostic messages
+      vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, {});
+      vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist, {});
+
+
 		end,
 	},
 }

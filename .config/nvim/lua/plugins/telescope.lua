@@ -19,6 +19,7 @@ return {
       vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
       vim.keymap.set("n", "<leader><leader>", builtin.oldfiles, {})
       vim.api.nvim_set_keymap("n", "<Leader>fr", ":Telescope oldfiles<CR>", { noremap = true, silent = true })
+      vim.api.nvim_set_keymap("n", "<Leader>fm", ":Telescope lsp_document_symbols<CR>", { noremap = true, silent = true})
       require("telescope").load_extension("ui-select")
     end,
   },
