@@ -129,4 +129,9 @@ source <(fzf --zsh)
 
 tmux-git-autofetch() {(/home/kristian/.dotfiles/.tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)}
 add-zsh-hook chpwd tmux-git-autofetch
-    
+
+export AIDER_MODEL="ollama/mistral"
+export OLLAMA_MODEL="mistral"
+
+
+alias aic="aider --model ollama/deepseek-coder"
