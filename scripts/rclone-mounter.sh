@@ -48,8 +48,9 @@ mount_remote() {
         --daemon \
         --vfs-cache-mode writes \
         --vfs-cache-max-size 1G \
-        --vfs-cache-max-age 12h \
-        --dir-cache-time 1h
+        --vfs-cache-max-age 1m \
+        --dir-cache-time 30s \
+        --poll-interval 30s
 }
 
 # Initial mounting for all remotes
