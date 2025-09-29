@@ -32,7 +32,7 @@ return {
       vim.lsp.config("intelephense", { capabilities = capabilities })
 
       -- enable servers
-      for _, name in ipairs({ "ts_ls", "solargraph", "html", "lua_ls", "intelephense" }) do
+      for _, name in ipairs({ "ts_ls", "html", "lua_ls", "intelephense" }) do
         vim.lsp.enable(name)
       end
 
